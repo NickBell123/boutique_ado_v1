@@ -1,3 +1,7 @@
 *.sqlite3
 *.pyc
 __pycache__
+/.theia
+/.vscode
+/.gitpod.yml
+/env.py
