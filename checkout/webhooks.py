@@ -18,7 +18,7 @@ def webhook(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
 
     # Get the webhook data and verify the signature
-    payload = request.body.read
+    payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
 
